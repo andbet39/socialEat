@@ -11,11 +11,11 @@
                     <input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
                       <div class="form-group">
                         <label for="title">Title</label>
-                        <input type="text" class="form-control" id="title" placeholder="Enter event title">
+                        <input type="text" class="form-control" id="title" name='title' placeholder="Enter event title">
                       </div>
                        <div class="form-group">
                       <label for="description">Description</label>
-                      <textarea class="form-control" rows="3"></textarea>                    </div>
+                      <textarea class="form-control" name='description' rows="3"></textarea>                    </div>
                       <button type="submit" class="btn btn-success">Crea</button>
                     </form>
                     </div>
