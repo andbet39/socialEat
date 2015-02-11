@@ -30,5 +30,21 @@ class EventController extends Controller {
 		$event->save();
 	}
 
+	public  function index(){
+
+
+		return view('event.index');
+	}
+
+
+
+	public  function getList()
+	{
+
+		$events = Event::paginate(1);
+
+		return $events;
+	}
+
 
 }

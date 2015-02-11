@@ -16,10 +16,21 @@ Route::get('/', 'WelcomeController@index');
 Route::get('home', 'HomeController@index');
 
 
+Route::get('event', 'EventController@index');
 Route::get('event/create', 'EventController@create');
 Route::post('event/save', 'EventController@save');
+
+Route::get('api/events', 'EventController@getList');
+
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
+
+
+Route::get('picture', 'PictureController@index');
+Route::get('picture/get/{id}', [
+	'as' => 'getpicture', 'uses' => 'PictureController@get']);
+Route::post('picture/add',[
+	'as' => 'addpicture', 'uses' => 'PictureController@add']);

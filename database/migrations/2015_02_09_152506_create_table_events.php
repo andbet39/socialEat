@@ -23,7 +23,6 @@ class CreateTableEvents extends Migration {
             $table->integer('max_partecipant')->nullable();
             $table->integer('min_partecipant')->nullable();
             $table->integer('user_id')->unsigned();
-
             $table->foreign('user_id')->references('id')->on('users');
             $table->integer('picture_id')->unsigned()->nullable();
 
