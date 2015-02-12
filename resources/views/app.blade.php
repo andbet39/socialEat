@@ -12,13 +12,17 @@
 
 
 	<link href="/css/app.css" rel="stylesheet">
-	<link href="/css/animate.css" rel="stylesheet">
 	<link href="/css/animation.css" rel="stylesheet">
 
+
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.7/angular.js"></script>
+	<script src="https://code.angularjs.org/1.3.5/angular-animate.js"></script>
 	<!--AngularJS-->
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular.min.js"></script>
+
 	<script src="js/app.js"></script>
 
+	<link href="/css/app.css" rel="stylesheet">
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

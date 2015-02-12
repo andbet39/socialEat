@@ -41,7 +41,7 @@ class EventController extends Controller {
 	public  function getList()
 	{
 
-		$events = Event::paginate(6);
+		$events = Event::paginate(2);
 
 		return $events;
 	}

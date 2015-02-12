@@ -3,7 +3,7 @@
 @section('content')
     <div class="container" ng-app="eventApp" ng-controller="eventController">
         <div class="row">
-            <div class="event-item"  ng-repeat="event in events">
+            <div class="my-repeat-animation"  ng-repeat="event in events">
                 <div class="col-md-4" >
                     <div class="panel panel-default">
                         <div class="panel-heading"><% event.title %></div>
