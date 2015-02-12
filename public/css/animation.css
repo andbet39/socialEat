@@ -1,0 +1,7 @@
+
+.event-item.ng-enter {
+    animation: fadeIn 3s;
+}
+.event-item.ng-leave {
+    animation: fadeOut 3s;
+}

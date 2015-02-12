@@ -1,4 +1,4 @@
-var app = angular.module('eventApp', [], function($interpolateProvider) {
+var app = angular.module('eventApp', ['ngAnimate'], function($interpolateProvider) {
     $interpolateProvider.startSymbol('<%');
     $interpolateProvider.endSymbol('%>');
 });

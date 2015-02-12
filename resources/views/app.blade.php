@@ -6,12 +6,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Laravel</title>
 
-	<link href="/css/app.css" rel="stylesheet">
-
 	<!-- Fonts -->
 	<link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
+
+	<link href="/css/app.css" rel="stylesheet">
+	<link href="/css/animate.css" rel="stylesheet">
+	<link href="/css/animation.css" rel="stylesheet">
 
 	<!--AngularJS-->
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular.min.js"></script>
