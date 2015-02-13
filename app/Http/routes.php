@@ -21,6 +21,7 @@ Route::get('event/create', 'EventController@create');
 Route::post('event/save', 'EventController@save');
 
 Route::get('api/event/detail', 'EventController@detail');
+Route::get('api/event/partecipate', 'EventController@partecipate');
 Route::get('api/events', 'EventController@getList');
 
 
@@ -35,3 +36,7 @@ Route::get('picture/get/{id}', [
 	'as' => 'getpicture', 'uses' => 'PictureController@get']);
 Route::post('picture/add',[
 	'as' => 'addpicture', 'uses' => 'PictureController@add']);
+
+
+Route::resource('api/items','ItemsController');
+Route:get('items','ItemsController@angular');

@@ -19,13 +19,13 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.7/angular.js"></script>
 	<script src="https://code.angularjs.org/1.3.7/angular-animate.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.7/angular-route.js"></script>
-	<!--AngularJS-->
+	<!--AngularJS
 
 	<script src="js/app.js"></script>
 
 	<script src="js/route.js"></script>
 	<script src="js/controller/eventController.js"></script>
-	<script src="js/controller/detailController.js"></script>
+	<script src="js/controller/detailController.js"></script>-->
 
 	<link href="/css/app.css" rel="stylesheet">
 

@@ -1,1 +1,20 @@
-<h1><% data.title %></h1>
+<div class="content">
+    <div ng-show="loading"><i  class="fa fa-spinner fa-spin"></i></div>
+    <section ng-hide="loading" class="event-detail">
+        <div class="row">
+            <div class="col-md-9 col-md-offset-1">
+            <h1><% data.title %></h1>
+
+            <p><% data.description %></p>
+            <div id="partecipants" ng-show="data.partecipants.length()!=0">
+            <ul>
+                <li ng-repeat="user in data.partecipants">
+                    <% user.name %>
+                </li>
+            </ul>
+            </div>
+            <button class="btn btn-success" ng-click="partecipate()">Partecipa</button>
+            </div>
+        </div>
+    </section>
+</div>

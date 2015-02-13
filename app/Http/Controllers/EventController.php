@@ -43,6 +43,15 @@ class EventController extends Controller {
 
 	}
 
+	public function partecipate (){
+
+
+		$event = Event::with('partecipants')->with('user')->findOrFail(Request::input('id'));
+		$event->partecipants()->attach(Auth::User());
+
+		return $event;//view('event.detail',['event'=>$event]);
+
+	}
 
 	public  function getList()
 	{

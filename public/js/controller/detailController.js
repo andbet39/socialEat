@@ -16,15 +16,25 @@ app.controller('detailController', function($scope, $http, $routeParams) {
             url: '/api/event/detail',
             method: "GET",
             params: {id:  $routeParams.eventID}
-        }).success(function (data, status, headers, config) {
-
-            $scope.data = data;
+        }).success(function (data) {
             $scope.loading = false;
+            $scope.data = data;
 
         });
     };
 
+    $scope.partecipate =  function (){
+         $scope.eventid=$routeParams.eventID;
+        $http({
+            url: '/api/event/partecipate',
+            method: "GET",
+            params: {id:  $routeParams.eventID}
+        }).success(function (data) {
+             $scope.data=data;
 
+        });
+
+    }
 
 
     $scope.init();

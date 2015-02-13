@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
-
+use App\Item;
 
 
 class DatabaseSeeder extends Seeder {
@@ -16,7 +16,20 @@ class DatabaseSeeder extends Seeder {
 	{
 		Model::unguard();
 
-		$this->call('EventDataSeeder');
+		$this->call('ItemDataSeeder');
+	}
+
+}
+
+class ItemDataSeeder extends Seeder {
+
+	public function run()
+	{
+		DB::table('items')->delete();
+
+		for ($i = 1; $i <= 100; $i++) {
+			Item::create(array('title' => 'Event test ' . $i));
+		}
 	}
 
 }
