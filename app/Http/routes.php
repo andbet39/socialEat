@@ -20,6 +20,7 @@ Route::get('event', 'EventController@index');
 Route::get('event/create', 'EventController@create');
 Route::post('event/save', 'EventController@save');
 
+Route::get('api/event/detail', 'EventController@detail');
 Route::get('api/events', 'EventController@getList');
 
 

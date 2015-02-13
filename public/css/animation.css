@@ -7,20 +7,16 @@
 }
 
 .my-repeat-animation.ng-enter {
-    left:-10px;
-    opacity:0;
+     opacity:0;
 }
 .my-repeat-animation.ng-enter.ng-enter-active {
-    left:0;
-    opacity:1;
+     opacity:1;
 }
 
 .my-repeat-animation.ng-leave {
-    left:0;
-    opacity:1;
+     opacity:1;
 }
 .my-repeat-animation.ng-leave.ng-leave-active {
-    left:-10px;
     opacity:0;
 }
 

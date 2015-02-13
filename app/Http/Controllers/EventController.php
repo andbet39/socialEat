@@ -25,7 +25,6 @@ class EventController extends Controller {
 		$event = new Event();
 		$event->title = Request::input('title');
 		$event->description = Request::input('description');
-
 		$event->user_id = Auth::user()->id;
 		$event->save();
 	}
@@ -35,13 +34,20 @@ class EventController extends Controller {
 
 		return view('event.index');
 	}
+	public function detail (){
 
+
+		$event = Event::with('partecipants')->with('user')->findOrFail(Request::input('id'));
+
+  		return $event;//view('event.detail',['event'=>$event]);
+
+	}
 
 
 	public  function getList()
 	{
 
-		$events = Event::paginate(2);
+		$events = Event::with('partecipants')->with('user')->paginate(2);
 
 		return $events;
 	}
